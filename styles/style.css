@@ -1,0 +1,120 @@
+:root{
+	--azul__claro: #139A43;
+	--fonte__rodape: #000000;
+	--botao__pressionado: #272727;
+	--branco__fonte: #F6F6F6;
+	--fonte__1: 'Montserrat';
+	--fonte__2: 'Krona One';
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	box-sizing: border-box;
+	background-color: black;
+	color: var(--branco__fonte)
+}
+
+.cabeçalho{
+	padding: 2% 0 0 15% ;
+}
+
+.cabeçalho__menu{
+	display: flex;
+	gap: 80px;
+}
+
+.cabeçalho__menu__link{
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 24px;
+	font-family: var(--fonte__1);
+	color: var(--azul__claro);
+}
+
+.apresentaçao{
+	padding: 5% 15%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.apresentaçao__conteudo{
+	width: 615px;
+	display: flex;
+	flex-direction: column;
+	grid-gap: 40px;
+}
+
+.apresentaçao__botao{
+	/* background-color: #22D4FD; */
+	display: flex;
+	justify-content: center;
+	grid-gap: 16px;
+	border:	4px groove var(--azul__claro);
+	width: 378px;
+	text-align: center;
+	color: #F6F6F6;
+	font-size: 24px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	font-weight: 600;
+	font-family: var(--fonte__1);
+	text-decoration: none;
+	border-radius: 8px;
+}
+
+.apresentaçao__botao:hover {
+	background-color: var(--botao__pressionado);
+}
+
+.apresentaçao__conteudo__titulo{
+	color: var(--branco__fonte);
+	font-size: 36px;
+	font-family: var(--fonte__2);
+}
+
+.apresentaçao__destaque {
+	color: var(--azul__claro);
+	font-size: 36px;
+	font-family: var(--fonte__2);
+}
+
+.apresentaçao__texto{
+	color: var(--branco__fonte);
+	font-size: 24px;
+	font-family: var(--fonte__1);
+	display: flex;
+	flex-direction: column;
+	grid-gap: 51px;
+}
+
+.apresentaçao__link-subtitulo{
+	font-family: var(--fonte__2);
+	font-weight: 400;
+	font-size: 24px;
+}
+
+.apresentaçao__links{
+	display: flex;
+	grid-gap: 32px;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.apresentaçao__imagem{
+	padding-left: 60px;
+}
+
+.rodape{
+	padding: 24px;
+	color: var(--fonte__rodape);
+	background-color : var(--azul__claro);
+	text-align: center;
+	font-family: var(--fonte__1);
+	font-size: 24px;
+}
